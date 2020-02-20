@@ -1,0 +1,7 @@
+<div *ngIf="current">
+    <p>{{ current.name }}</p>
+    <p>{{ current.genres }}</p>
+    <p>{{ current.rating }}</p>
+    <img [src]="current.image">
+    <p [innerHtml]="current.summary"></p>
+</div>
