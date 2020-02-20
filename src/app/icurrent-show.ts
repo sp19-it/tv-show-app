@@ -1,7 +1,9 @@
 export interface ICurrentShow {
     name: string,
     genres: string[],
-    rating: number,
+    rating: number 
     image: string,
     summary: string
 }
+
+

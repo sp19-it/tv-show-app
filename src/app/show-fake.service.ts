@@ -13,7 +13,7 @@ export class ShowFakeService implements IShowService {
     rating: 6,
     image: "",
     summary: "very scary"
-  }
+  } 
   constructor() { }
 
   getCurrentShow(name: string | number): Observable<ICurrentShow> {

@@ -21,12 +21,13 @@ export class ShowService implements IShowService {
   }
 
   transformToICurrentShow(data: ICurrentShowData): ICurrentShow {
+    console.log(data)
     return {
       name: data.name,
       genres: data.genres,
       rating: data.rating.average,
       image: data.image.medium,
       summary: data.summary
-    }
+    } 
   }
 }
