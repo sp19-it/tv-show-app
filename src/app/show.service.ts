@@ -26,7 +26,7 @@ export class ShowService implements IShowService {
       name: data.name,
       genres: data.genres,
       rating: data.rating.average,
-      image: data.image.medium,
+      image: data.image? data.image.medium : null,
       summary: data.summary
     } 
   }
