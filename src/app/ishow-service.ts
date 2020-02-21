@@ -1,6 +1,6 @@
 import { Observable } from 'rxjs';
-import { ICurrentShow} from './icurrent-show';
+import { ICurrentShow, ICurrentShowList} from './icurrent-show';
 
 export interface IShowService {
-    getCurrentShow(name: string | number): Observable<ICurrentShow>
+    getCurrentShow(name: string | number): Observable<ICurrentShowList>
 }

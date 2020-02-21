@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ICurrentShow } from '../icurrent-show';
+import { ICurrentShow, ICurrentShowList } from '../icurrent-show';
 import { ShowService } from '../show.service';
 
 @Component({
@@ -8,7 +8,7 @@ import { ShowService } from '../show.service';
   styleUrls: ['./current-show.component.css']
 })
 export class CurrentShowComponent implements OnInit {
-  current: ICurrentShow
+  current: ICurrentShowList
   constructor(private showService: ShowService) { }
 
   ngOnInit() {

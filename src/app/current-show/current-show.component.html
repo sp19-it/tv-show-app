@@ -1,7 +1,9 @@
-<div *ngIf="current">
-    <p>{{ current.name }}</p>
-    <p>{{ current.genres }}</p>
-    <p>{{ current.rating }}</p>
-    <img [src]="current.image">
-    <p [innerHtml]="current.summary"></p>
+<div *ngFor="let show of current">
+    <br>
+    <br>
+    <p *ngIf="show" style="text-decoration: underline rgb(211, 69, 13); text-decoration-thickness: 5px;"><b>{{ show.name }}</b></p>
+    <p *ngIf="show">{{ show.rating }}</p>
+    <img *ngIf="show"[src]="show.image">
+    <p *ngIf="show"[innerHtml]="show.summary"></p>
+    <hr>
 </div>
