@@ -36,31 +36,31 @@ export class ShowService implements IShowService {
       if (data[i].show.name) {
         showName = data[i].show.name
       } else {
-        showName = "not available"
+        showName = "Not Available"
       }
 
       if (data[i].show.genres) {
         showGenres = data[i].show.genres
       } else {
-        showName = "not available"
+        showName = "Not Available"
       }
 
       if (data[i].show.image? data[i].show.image.medium : null) {
         showImage = data[i].show.image.medium
       } else {
-        showImage = "not available"
+        showImage = "Not Available"
       }
 
       if (data[i].show.rating.average) {
         showRating = data[i].show.rating.average
       } else {
-        showRating = "No rating yet"
+        showRating = "No Ratings Yet"
       }
 
       if (data[i].show.summary) {
         showSummary = data[i].show.summary
       } else {
-        showSummary = "not available"
+        showSummary = "Not Available"
       }
 
       ICurrentShowList[i] = {
