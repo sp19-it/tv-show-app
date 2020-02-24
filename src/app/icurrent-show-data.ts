@@ -4,6 +4,7 @@ export interface ICurrentShowData {
         genres: [
             string
         ],
+        officialSite: string,
         rating: {
             average: number | string
         },

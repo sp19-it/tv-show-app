@@ -3,6 +3,7 @@ export interface ICurrentShow {
     genres: string[],
     rating: number | string,
     image: string,
+    website: string,
     summary: string
 }
 

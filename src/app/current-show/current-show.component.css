@@ -8,3 +8,20 @@
     font-family: 'Sarabun', sans-serif;
     color:rgb(10, 49, 134); 
 }
+
+
+a:link {
+  color: rgb(10, 49, 134);
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(163, 148, 148);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(15, 161, 15);
+  text-decoration: underline;
+}
+

@@ -27,6 +27,7 @@ export class ShowService implements IShowService {
     let showGenres: string[];
     let showRating: number | string;
     let showImage: string;
+    let showWebsite: string;
     let showSummary: string;
 
     let ICurrentShowList: ICurrentShow[] = new Array(data.length)
@@ -40,21 +41,27 @@ export class ShowService implements IShowService {
       }
 
       if (data[i].show.genres) {
-        showGenres = data[i].show.genres
-      } else {
-        showName = "Not Available"
+        showGenres = data[i].show.genres 
+      } else if (data[i].show.genres === []) {
+        showGenres = ["Unknown"]
       }
 
       if (data[i].show.image? data[i].show.image.medium : null) {
         showImage = data[i].show.image.medium
       } else {
-        showImage = "Not Available"
+        showImage = ""
       }
 
       if (data[i].show.rating.average) {
         showRating = data[i].show.rating.average
       } else {
         showRating = "No Ratings Yet"
+      }
+
+      if (data[i].show.officialSite) {
+        showWebsite = data[i].show.officialSite
+      } else {
+        showWebsite = "Website Not Available"
       }
 
       if (data[i].show.summary) {
@@ -68,6 +75,7 @@ export class ShowService implements IShowService {
         genres: showGenres,
         rating: showRating,
         image: showImage,
+        website: showWebsite,
         summary: showSummary
       }
     }
