@@ -1,11 +1,11 @@
 <div style="text-align: center; font-family: 'Sarabun', sans-serif; color:rgb(10, 49, 134); ">
   <mat-toolbar color="primary">
     <span style="font-family: 'Sarabun', sans-serif;"class="title-center">
-      Welcome to TV Show Library
+      TV Show Library
     </span>
   </mat-toolbar>
-  <app-search-show></app-search-show>
+  <app-search-show (searchEvent)="doSearch($event)"></app-search-show>
   <mat-card color="primary">
-    <app-current-show style="font-family: 'Sarabun', sans-serif; color:rgb(10, 49, 134); "></app-current-show>
+    <app-current-show [current]="currentShow"></app-current-show>
   </mat-card >
 </div>

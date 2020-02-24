@@ -1,0 +1,10 @@
+.title-deco {
+    font-size: large;
+    text-decoration: underline rgb(211, 69, 13);
+    text-decoration-style: double;
+}
+
+.current-show-deco {
+    font-family: 'Sarabun', sans-serif;
+    color:rgb(10, 49, 134); 
+}

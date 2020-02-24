@@ -1,9 +1,9 @@
-<div *ngFor="let show of current">
+<div *ngFor="let show of current" class="current-show-deco">
     <br>
     <br>
-    <p *ngIf="show" style="text-decoration: underline rgb(211, 69, 13); text-decoration-thickness: 5px;"><b>{{ show.name }}</b></p>
+    <p *ngIf="show" class="title-deco"><b>{{ show.name }}</b></p>
     <p *ngIf="show">{{ show.rating }}</p>
-    <img *ngIf="show"[src]="show.image">
+    <img *ngIf="show"[src]="show.image" alt="Image Not Available">
     <p *ngIf="show"[innerHtml]="show.summary"></p>
     <hr>
 </div>
