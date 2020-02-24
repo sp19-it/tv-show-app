@@ -5,9 +5,7 @@
     <p *ngIf="show">{{ show.genres }}
     <span *ngIf="show">	&nbsp;	&nbsp;	&nbsp;||	&nbsp;	&nbsp;	&nbsp;   {{ show.rating }}</span>
     </p>
-    
     <p *ngIf="show"><a [href]="show.website" target="_blank">{{ show.website }}</a></p>
-    
     <img [src]="show.image" alt="Image Not Available">
     <p *ngIf="show"[innerHtml]="show.summary"></p>
     <hr>

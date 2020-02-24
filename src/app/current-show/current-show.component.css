@@ -1,27 +1,30 @@
 .title-deco {
-    font-size: large;
-    text-decoration: underline rgb(211, 69, 13);
+    font-size: 50px;
+    font-family: 'Monoton';
+    color: #E65100;
+    text-decoration-line: underline;
     text-decoration-style: double;
+    text-decoration-color:#212121;
 }
 
 .current-show-deco {
     font-family: 'Sarabun', sans-serif;
-    color:rgb(10, 49, 134); 
+    color:#212121;
 }
 
 
 a:link {
-  color: rgb(10, 49, 134);
+  color: #FB8C00;
   text-decoration: none;
 }
 
 a:visited {
-  color: rgb(163, 148, 148);
+  color: #BDBDBD;
   text-decoration: none;
 }
 
 a:hover {
-  color: rgb(15, 161, 15);
+  color: #212121;
   text-decoration: underline;
 }
 
