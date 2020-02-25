@@ -13,6 +13,7 @@ export class ShowFakeService implements IShowService {
       genres: ["thriller"],
       rating: 6,
       image: "",
+      website:"",
       summary: "very scary"
     }
   ]

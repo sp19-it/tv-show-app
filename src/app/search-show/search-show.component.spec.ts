@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { SearchShowComponent } from './search-show.component';
+import { ShowService } from '../show.service';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 
 describe('SearchShowComponent', () => {
   let component: SearchShowComponent;
@@ -8,7 +10,9 @@ describe('SearchShowComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SearchShowComponent ]
+      declarations: [ SearchShowComponent ],
+      imports: [ HttpClientTestingModule ],
+      providers: [ ShowService ]
     })
     .compileComponents();
   }));
