@@ -1,6 +1,6 @@
 export interface ICurrentShow {
     name: string,
-    genres: string[],
+    genres: string[] | string,
     rating: number | string,
     image: string,
     website: string,

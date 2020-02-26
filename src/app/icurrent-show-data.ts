@@ -3,7 +3,7 @@ export interface ICurrentShowData {
         name: string,
         genres: [
             string
-        ],
+        ] | string,
         officialSite: string,
         rating: {
             average: number | string

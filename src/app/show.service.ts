@@ -24,7 +24,7 @@ export class ShowService implements IShowService {
     console.log(data)
   
     let showName: string;
-    let showGenres: string[];
+    let showGenres: string[] | string;
     let showRating: number | string;
     let showImage: string;
     let showWebsite: string;
@@ -40,10 +40,10 @@ export class ShowService implements IShowService {
         showName = "Not Available"
       }
 
-      if (data[i].show.genres) {
+      if (data[i].show.genres.length > 0) {
         showGenres = data[i].show.genres 
-      } else if (data[i].show.genres === []) {
-        showGenres = ["Unknown"]
+      } else {
+        showGenres = "Unknown Genres"
       }
 
       if (data[i].show.image? data[i].show.image.medium : null) {
